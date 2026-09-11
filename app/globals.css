@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    scroll-behavior: smooth;
+  }
+
+  html {
+    background-color: #0B4C8F; /* deep-700: prevents white flash behind fixed nav on hero */
+  }
+
+  body {
+    @apply bg-surface-page text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand-100 text-deep;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-6xl px-6;
+  }
+
+  .section {
+    @apply py-20 lg:py-28;
+  }
+
+  /* MDX prose styles for blog posts */
+  .prose h1 { @apply font-display text-4xl font-bold text-ink mt-12 mb-6 tracking-tight; }
+  .prose h2 { @apply font-display text-3xl font-bold text-ink mt-10 mb-4 tracking-tight; }
+  .prose h3 { @apply font-display text-2xl font-semibold text-ink mt-8 mb-3; }
+  .prose p  { @apply text-ink-muted leading-relaxed mb-5; }
+  .prose ul { @apply list-disc list-inside text-ink-muted space-y-2 mb-5 pl-2; }
+  .prose ol { @apply list-decimal list-inside text-ink-muted space-y-2 mb-5 pl-2; }
+  .prose a  { @apply text-brand underline underline-offset-4 hover:text-deep; }
+  .prose blockquote { @apply border-l-4 border-brand-200 pl-6 italic text-ink-muted my-6; }
+  .prose code { @apply bg-surface-sunken text-deep text-sm px-1.5 py-0.5 rounded-xl font-mono; }
+}

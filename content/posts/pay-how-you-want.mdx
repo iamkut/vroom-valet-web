@@ -1,0 +1,60 @@
+---
+title: Pay how you want — why we built Vroom Valet without a payment gate
+date: "2026-09-05"
+excerpt: Most booking apps force a card on signup. We didn't. Here is why, and how our payment model actually works.
+author: Vroom Valet Team
+---
+
+Most booking platforms ask for a card before you can do anything useful.
+We think that's the wrong call for a car wash marketplace in South Africa.
+
+## The reality of how South Africans pay
+
+Cash is not a fallback here. For millions of people, cash is the primary payment method — by preference,
+by habit, and by the structure of daily life. The same goes for car wash operators.
+Many run entirely on cash. Many have a Speedpoint machine. Almost none started with online payments.
+
+Building a marketplace that requires Paystack to function means building for a minority of the market
+from day one. We were not interested in doing that.
+
+## Three ways to pay
+
+Vroom Valet supports three payment modes. The operator decides which ones apply to their wash.
+
+**Cash at collection.** The most common mode in South Africa. You book, you get washed, you pay
+the operator directly when you collect the car. Vroom Valet never touches the money.
+
+**Card at the till.** The operator's own Speedpoint or card machine. You swipe at the end, the
+same way you would at any other business. Again, Vroom Valet is not involved in the transaction.
+
+**Online via Paystack.** Where operators have enabled it, you can pay upfront in the app.
+Paystack processes the payment and routes the operator's share directly to their bank account.
+
+## No card required to sign up
+
+You can create a Vroom Valet account, book a wash, and pay in cash without ever entering a card number.
+The card field does not exist on the signup screen. It appears only if you choose to pay online.
+
+This is a deliberate choice. The hardest part of building a marketplace is getting the first customer
+through the door. Putting a payment form between "download the app" and "book a wash" is a door we
+chose not to build.
+
+## How we make money
+
+Our platform revenue comes from two places.
+
+**Operator subscriptions.** Car wash operators pay a monthly fee to list their wash on Vroom Valet.
+The Starter tier covers cash and card-at-till operators. The Growth tier adds Paystack integration.
+
+**Transaction take-rate.** On Paystack-routed transactions, we take a small platform fee.
+This only applies when the operator has chosen to enable online payment. Cash and card-at-till
+operators pay nothing beyond their subscription.
+
+We can only collect a take-rate on transactions we are part of. Cash and card-at-till keep the
+operator's full revenue. That is also deliberate — it means we only make more money when online
+payment genuinely works for operators, not by forcing it.
+
+---
+
+If you run a car wash and want to understand how pricing works for operators,
+see the [operator pricing page](/pricing#operators).
