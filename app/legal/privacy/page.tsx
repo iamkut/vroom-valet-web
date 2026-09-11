@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   const raw = readFileSync(
-    path.join(process.cwd(), '..', 'docs', 'privacy-policy.md'),
+    path.join(process.cwd(), 'content', 'legal', 'privacy-policy.md'),
     'utf8',
   );
 
