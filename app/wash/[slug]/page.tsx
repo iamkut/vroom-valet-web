@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import AppStoreBadges from '@/components/AppStoreBadges';
 
+export const runtime = 'edge';
+
 export const metadata: Metadata = {
   title: 'Book a wash',
   description: 'Download the Vroom Valet app to book this wash.',
